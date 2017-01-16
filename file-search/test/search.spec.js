@@ -15,6 +15,15 @@ describe("Search", function() {
         fs.writeFileSync(".test_files/dir2/d", "");
       }
     });
+    after(function() {
+      fs.unlinkSync(".test_files/dir/c");
+      fs.rmdirSync(".test_files/dir");
+      fs.unlinkSync(".test_files/dir2/d");
+      fs.rmdirSync(".test_files/dir2");
+      fs.unlinkSync(".test_files/a");
+      fs.unlinkSync(".test_files/b");
+      fs.rmdirSync(".test_files");
+    });
 
     it("should retrieve the files from a directory", function(done) {
       search.scan(".test_files", 0, function(err, flist) {
@@ -26,16 +35,6 @@ describe("Search", function() {
         ]);
         done();
       });
-    });
-
-    after(function() {
-      fs.unlinkSync(".test_files/dir/c");
-      fs.rmdirSync(".test_files/dir");
-      fs.unlinkSync(".test_files/dir2/d");
-      fs.rmdirSync(".test_files/dir2");
-      fs.unlinkSync(".test_files/a");
-      fs.unlinkSync(".test_files/b");
-      fs.rmdirSync(".test_files");
     });
   });
 

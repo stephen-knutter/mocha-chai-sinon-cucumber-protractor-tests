@@ -1,23 +1,22 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/Cellar/node/6.6.0/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'run',
-1 verbose cli   'watch' ]
-2 info using npm@3.10.7
-3 info using node@v6.6.0
-4 verbose stack Error: ENOENT: no such file or directory, open '/Users/Stephen/Documents/playgrounds/js-testing/package.json'
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'test' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose stack Error: ENOENT: no such file or directory, open 'C:\Users\sknutter\documents\visual studio 2015\projects\mocha-chai-sinon-cucumber-protractor-tests\package.json'
 4 verbose stack     at Error (native)
-5 verbose cwd /Users/Stephen/Documents/playgrounds/js-testing
-6 error Darwin 14.5.0
-7 error argv "/usr/local/Cellar/node/6.6.0/bin/node" "/usr/local/bin/npm" "run" "watch"
-8 error node v6.6.0
-9 error npm  v3.10.7
-10 error path /Users/Stephen/Documents/playgrounds/js-testing/package.json
+5 verbose cwd C:\Users\sknutter\documents\visual studio 2015\projects\mocha-chai-sinon-cucumber-protractor-tests
+6 error Windows_NT 10.0.14393
+7 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "test"
+8 error node v6.9.4
+9 error npm  v3.10.10
+10 error path C:\Users\sknutter\documents\visual studio 2015\projects\mocha-chai-sinon-cucumber-protractor-tests\package.json
 11 error code ENOENT
-12 error errno -2
+12 error errno -4058
 13 error syscall open
-14 error enoent ENOENT: no such file or directory, open '/Users/Stephen/Documents/playgrounds/js-testing/package.json'
-15 error enoent ENOENT: no such file or directory, open '/Users/Stephen/Documents/playgrounds/js-testing/package.json'
+14 error enoent ENOENT: no such file or directory, open 'C:\Users\sknutter\documents\visual studio 2015\projects\mocha-chai-sinon-cucumber-protractor-tests\package.json'
+15 error enoent ENOENT: no such file or directory, open 'C:\Users\sknutter\documents\visual studio 2015\projects\mocha-chai-sinon-cucumber-protractor-tests\package.json'
 15 error enoent This is most likely not a problem with npm itself
 15 error enoent and is related to npm not being able to find a file.
-16 verbose exit [ -2, true ]
+16 verbose exit [ -4058, true ]
